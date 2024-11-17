@@ -4,12 +4,16 @@ console.log('****** Part Supply *******');
 // your code does what you expect!
 
 // 1. Create a variable called 'partsNeeded' with a value of the number 40.
+// creating a variable called partsNeeded and setting its value @ 40
+//console.log(partsNeeded)
+
 let partsNeeded = 40;
 console.log('1. Parts needed: 40');
 
 
 // 2. Create a variable called 'supplyChanges' whose value is an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11.
+// creating a variable called supplyChange and setting its value to an Array called supplyChangesArray
 let suppluChangesArray = [3, 5, -6, 0, 7, 11];
 console.log('2. Supply changes: 3,5,-6,0,7,11');
 
