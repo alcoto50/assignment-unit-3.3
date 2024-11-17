@@ -26,8 +26,8 @@ console.log('access the second value of supplyChangesArray:5');
 console.log('Remove the last value from supplyChangesArray: 11');
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
-let supplyChanges = supplyChangesArray.
-console.log('Add the value into supplyChangesArray: 25');
+let supplyChanges = supplyChangesArray.push
+console.log('Add the value 25 into supplyChangesArray: 25');
 
 
 // 6. Create three new variables named 'positives', 'negatives', and
