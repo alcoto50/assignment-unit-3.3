@@ -59,10 +59,25 @@ console.log('Looping through supplyChanges to populate arrays with positive, neg
 
 // ***** STRETCH GOALS *********************************************
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',
-//    'negatives', and 'zeroes', create three new arrays named 'stretchPositives',
+let stretchPositives = [];
+let stretchNegatives = [];
+let stretchZeroes = [];
+
 for (let value of supplyChangesArray) {
   if (value > 0) {
     stretchPositives.push(value);
+  } else if (value < 0) {
+    stretchNegatives.push(value);
+  } else {
+    stretchZeroes.push(value);
+  }
+}
+
+console.log('Looping through supplyChanges to populate more arrays with positive, negative, and zero values:', stretchPositives, stretchNegatives, stretchZeroes);
+//    'negatives', and 'zeroes', create three new arrays named 'stretchPositives',
+for (let value of supplyChangesArray) {
+  if (value > 0) {
+    stretchPositives.push(value); 
   } else if (value < 0) {
     stretchNegatives.push(value);
   } else {
@@ -83,29 +98,25 @@ for (let i = 0; i < supplyChangesArray.length; i++) {
 //    Then, write a loop that adds each value of the 'supplyChanges'
 //    array to the 'totalParts' variable.
 let totalParts = 0;
-for (let i = 0; i < supplyChanges.length; i++)
-
+for (let i = 0; i < supplyChanges.length; i++){
+  totalParts += supplyChanges[1];
 console.log('Looping through supplyChanges to calculate the sum:');
-
+}
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. There are 572
 //    parts in total, and each box holds 7 parts.
 //    Create two variables:
 //      1. 'parts': Set its value to 572
-while (parts >= 7) {
-  parts -= 7;
-  boxesFilled++;
-}
-console.log('9. Filling boxes with a "while loop"', parts, boxesFilled);
-//    "left over," and the value of 'boxesFilled' should reflect
-//    how many boxes were filled.
+//      2. 'boxesFilled': This variable should be assigned the result of dividing 'parts' by 7.
 let parts = 572;
-let boxesFilled = 0;
-while (parts > 0) 
-  parts = parts -7;
-boxesFilled = boxesFilled +1;
-console('').log('9. Filling boxes with a "while loop"');
+let boxesFilled = Math.floor(parts / 7);
+let leftoverParts = parts % 7;
+
+console.log('Total parts:', parts);
+console.log('Boxes filled:', boxesFilled);
+console.log('Leftover parts:', leftoverParts);
+
 
 // DO NOT MODIFY
 // Used for automated testing
